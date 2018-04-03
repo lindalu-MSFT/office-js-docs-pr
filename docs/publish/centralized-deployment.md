@@ -122,3 +122,4 @@ If the add-in does not support add-in commands, users can add it to their Office
 ## Supporting uploaded add-ins with single sign on
 
 When working with uploaded add-ins, single sign on (SSO) features behave differently than they would with add-ins connected to the Office Store. Specifically, the add-in's [WebApplicationInfo](/reference/manifest/webapplicationinfo.md) determines what information displays during the consent experience when acquiring and activating the add-in. As a consequence, it is important that [your add-in service](/docs/develop/sso-in-office-add-ins.md#create-the-service-application) has been registered with complete, user-ready information.
+ 
