@@ -31,7 +31,7 @@ The following are the prerequisites for creating a Project task pane add-in that
     Verify that the  **ProjectData** service is accessible from your development computer.
     
 
-### Procedure 1. To verify that the ProjectData service is accessible
+### Procedure 1. Verify that the ProjectData service is accessible
 
 
 1. To enable your browser to directly show the XML data from a REST query, turn off the feed reading view. For information about how to do this in Internet Explorer, see Procedure 1, step 4 in [Querying OData feeds for Project reporting data](http://msdn.microsoft.com/library/3eafda3b-f006-48be-baa6-961b2ed9fe01%28Office.15%29.aspx).
@@ -69,7 +69,7 @@ Office Developer Tools for Visual Studio includes a template for task pane add-i
 - The web project is named  **HelloProjectODataWeb**. It includes the webpages, JavaScript files, CSS files, images, references, and configuration files for the web content in the task pane. The web project targets the .NET Framework 4. Procedure 4 and Procedure 5 show how to modify the files in the web project to create the functionality of the  **HelloProjectOData** add-in.
     
 
-### Procedure 2. To create the HelloProjectOData add-in for Project
+### Procedure 2. Create the HelloProjectOData add-in for Project
 
 
 1. Run Visual Studio 2015 as an administrator, and then select  **New Project** on the Start page.
@@ -108,7 +108,7 @@ The manifest for the  **HelloProjectOData** project is the HelloProjectOData.xml
 
 For more information about the manifest, see [Office Add-ins XML manifest](../develop/add-in-manifests.md) and [Schema reference for Office Add-ins manifests (v1.1)](../develop/add-in-manifests.md#see-also).
 
-### Procedure 3. To modify the add-in manifest
+### Procedure 3. Modify the add-in manifest
 
 
 1. In Visual Studio, open the HelloProjectOData.xml file.
@@ -173,7 +173,7 @@ The task pane shows the add-in display name at the top, which is the value of th
     > In this example, cost and work data for the active project are derived from the published values. If you change values in Project, the  **ProjectData** service does not have the changes until the project is published.
 
 
-### Procedure 4. To create the HTML content
+### Procedure 4. Create the HTML content
 
 1. In the  **head** element of the Home.html file, add any additional **link** elements for CSS files that your add-in uses. The Visual Studio project template includes a link for the App.css file that you can use for custom CSS styles.
     
@@ -287,7 +287,7 @@ The JavaScript includes global constants for the REST query and global variables
 
 The remainder of the HelloProjectOData.js file includes two functions: the  **retrieveOData** function is called when the user selects **Compare All Projects**; and the  **parseODataResult** function calculates averages and then populates the comparison table with values that are formatted for color and units.
 
-### Procedure 5. To create the JavaScript code
+### Procedure 5. Create the JavaScript code
 
 1. Delete all code in the default HelloProjectOData.js file, and then add the global variables and  **Office.initialize** function. Variable names that are all capitals imply that they are constants; they are later used with the **_pwa** variable to create the REST query in this example.
     
@@ -568,7 +568,7 @@ Basic tests should include the following:
 - Run the add-in again, where you create a project that has tasks with cost and work data. You can save the project to Project Web App, but don't publish it. Verify that the add-in displays data from Project Server, but  **NA** for the current project.
     
 
-### Procedure 6. To test the add-in
+### Procedure 6. Test the add-in
 
 1. Run Project Professional 2013, connect with Project Web App, and then create a test project. Assign tasks to local resources or to enterprise resources, set various values of percent complete on some tasks, and then publish the project. Quit Project, which enables Visual Studio to start Project for debugging the add-in.
     
